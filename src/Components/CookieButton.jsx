@@ -5,4 +5,10 @@ export default function CookieButton() {
     function increase() {
         setCookieState(cookieState +1);
     }
+
+    return (
+        <div>
+        <p>You have'{cookieState}' many cookies, neat!</p>
+        </div>
+    )
 }
