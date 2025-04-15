@@ -8,7 +8,7 @@ export default function CookieButton() {
 
     return (
         <div>
-        <p>You have this many cookies,'{cookieState}' neat!</p>
+        <p>You have this many cookies:{cookieState}, neat!</p>
         </div>
     )
 }
