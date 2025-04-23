@@ -1,4 +1,3 @@
-import React from "react";
 import { useTimer } from "../useTimer";
 
 export default function Timer(){
