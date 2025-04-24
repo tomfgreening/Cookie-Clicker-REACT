@@ -6,14 +6,14 @@ import Timer from "./Components/Timer";
 
 
 export default function App() {
-    const [currentcookieState, setCookieState] = useState(0);
+    const [cookieCount, setCookieState] = useState(0);
     function increase() {
-        setCookieState(currentcookieState +1);
+        setCookieState(cookieCount +1);
     }
     return (
         <div>
             <CookieButton
-            currentcookieState={currentcookieState}
+            cookieCount={cookieCount}
             increase={increase}
             />
             <Timer/>
