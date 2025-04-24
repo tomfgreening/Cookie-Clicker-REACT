@@ -12,7 +12,10 @@ export default function App() {
     }
     return (
         <div>
-            <CookieButton/>
+            <CookieButton
+            currentcookieState={currentcookieState}
+            increase={increase}
+            />
             <Timer/>
         </div>
     );
