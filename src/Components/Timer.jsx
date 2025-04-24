@@ -1,6 +1,4 @@
-import { useTimer } from "../useTimer";
-
-export default function Timer(){
-    const count = useTimer();
+export default function Timer({count})
+{
     return <div>Count: {count} </div>;
 }
