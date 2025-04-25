@@ -4,6 +4,7 @@ import { useState } from "react";
 import CookieButton from "./Components/CookieButton";
 import { useTimer } from "./useTimer";
 import Timer from "./Components/Timer";
+import TotalCookies from "./Components/TotalCookies";
 
 
 export default function App() {
@@ -19,7 +20,12 @@ export default function App() {
             increase={increase}
             />
             <Timer
-            count={count}/>
+            count={count}
+            />
+            <TotalCookies
+            count={count}
+            cookieCount={cookieCount}
+            />
         </div>
     );
 }
