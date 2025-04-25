@@ -20,7 +20,12 @@ export default function App() {
             increase={increase}
             />
             <Timer
-            count={count}/>
+            count={count}
+            />
+            <TotalCookies
+            count={count}
+            cookieCount={cookieCount}
+            />
         </div>
     );
 }
