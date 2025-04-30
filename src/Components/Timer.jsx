@@ -1,4 +1,4 @@
-export default function Timer({count})
+export default function Timer()
 {
-    return <div>Count: {count} </div>;
+    return <div> </div>;
 }
