@@ -15,14 +15,15 @@ export default function App() {
     }
     return (
         <div>
-            <CookieButton
-            increase={increase}
-            />
-            <Timer/>
             <TotalCookies
             count={count}
             cookieCount={cookieCount}
             />
+            <CookieButton
+            increase={increase}
+            />
+            <Timer/>
+            
         </div>
     );
 }
