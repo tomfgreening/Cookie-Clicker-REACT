@@ -1,7 +1,7 @@
-export default function UpgradesTable({cookieCost, decrease}){
-    return(
-        <div>
-            <button onClick={decrease(cookieCost)}>Upgrade 1</button>
-        </div>
-    )
+export default function UpgradesTable({ cookieCost, decrease }) {
+  return (
+    <div>
+      <button onClick={decrease(cookieCost)}>Upgrade 1 - 50 cookies </button>
+    </div>
+  );
 }
