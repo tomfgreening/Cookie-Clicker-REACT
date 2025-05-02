@@ -13,6 +13,9 @@ export default function App() {
     function increase() {
         setCookieState(cookieCount +1);
     }
+    function decrease() {
+        setCookieState(cookieCount - );
+    }
     return (
         <div>
             <TotalCookies
