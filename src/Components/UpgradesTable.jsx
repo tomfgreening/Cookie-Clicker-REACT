@@ -8,6 +8,7 @@ export default function UpgradesTable({ decrease }) {
       key={item.id}
       onClick={() => decrease(Number(item.cost))}>
         {item.name} - {item.cost} cookies.
+        {item.description}
       </button>
     ))}
     </div>
