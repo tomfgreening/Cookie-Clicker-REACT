@@ -21,7 +21,7 @@ export default function App() {
       <TotalCookies count={count} cookieCount={cookieCount} />
       <CookieButton increase={increase} />
       <Timer />
-      <UpgradesTable />
+      <UpgradesTable decrease={decrease}/>
     </div>
   );
 }
