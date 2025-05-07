@@ -6,7 +6,8 @@ export default function UpgradesTable({ decrease }) {
     {UpgradeItems.map((item) => (
       <button
       key={item.id}
-  
+      onClick={() => decrease(Number(item.cost))}
+      >
       </button>
     ))}
     </div>
