@@ -1,9 +1,7 @@
 import React from "react";
 import { useState } from "react";
-
 import CookieButton from "./Components/CookieButton";
 import { useTimer } from "./useTimer";
-import Timer from "./Components/Timer";
 import TotalCookies from "./Components/TotalCookies";
 import UpgradesTable from "./Components/UpgradesTable";
 
@@ -20,7 +18,6 @@ export default function App() {
     <div>
       <TotalCookies count={count} cookieCount={cookieCount} />
       <CookieButton increase={increase} />
-      <Timer />
       <UpgradesTable decrease={decrease} />
     </div>
   );
