@@ -6,7 +6,7 @@ import TotalCookies from "./Components/TotalCookies";
 import UpgradesTable from "./Components/UpgradesTable";
 
 export default function App() {
-  const count = useTimer();
+  const count = useTimer({setCookieState, cookiesPerSecond});
   const [cookiesPerSecond, setCookiesPerSecond] = useState(0);
   const [cookieCount, setCookieState] = useState(0);
   function increase() {
