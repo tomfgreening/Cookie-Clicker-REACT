@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-export function useTimer() {
+export function useTimer([setCookieState, cookiesPerSecond]) {
     const [count,setCount] = useState(0);
 
     useEffect(()=> {
