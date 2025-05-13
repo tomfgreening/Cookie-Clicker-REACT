@@ -1,5 +1,4 @@
-export default function TotalCookies({ count, cookieCount }) {
-  const totalCookieCount = count + cookieCount;
+export default function TotalCookies({ totalCookieCount }) {
   return (
     <div>
       <p>Total cookies: {totalCookieCount}</p>

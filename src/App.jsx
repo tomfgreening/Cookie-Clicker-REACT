@@ -6,9 +6,9 @@ import TotalCookies from "./Components/TotalCookies";
 import UpgradesTable from "./Components/UpgradesTable";
 
 export default function App() {
-  const totalCookieCount = count + cookieCount;
   const [cookiesPerSecond, setCookiesPerSecond] = useState(0);
   const [cookieCount, setCookieCount] = useState(0);
+  const totalCookieCount = count + cookieCount;
   const count = useTimer({ setCookieCount, cookiesPerSecond });
   function increase() {
     setCookieCount(cookieCount + 1);
@@ -20,7 +20,11 @@ export default function App() {
     <div>
       <TotalCookies totalCookieCount={totalCookieCount} />
       <CookieButton increase={increase} />
-      <UpgradesTable decrease={decrease} cookiesPerSecond={cookiesPerSecond} setCookiesPerSecond={setCookiesPerSecond} />
+      <UpgradesTable
+        decrease={decrease}
+        cookiesPerSecond={cookiesPerSecond}
+        setCookiesPerSecond={setCookiesPerSecond}
+      />
     </div>
   );
 }
