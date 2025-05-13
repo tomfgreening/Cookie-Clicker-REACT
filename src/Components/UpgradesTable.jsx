@@ -1,6 +1,6 @@
 import { UpgradeItems } from "../lib/data";
 
-export default function UpgradesTable({ decrease }) {
+export default function UpgradesTable({ decrease, cookiesPerSecond, setCookiesPerSecond }) {
   return (
     <div>
     {UpgradeItems.map((item) => (

@@ -19,7 +19,7 @@ export default function App() {
     <div>
       <TotalCookies count={count} cookieCount={cookieCount} />
       <CookieButton increase={increase} />
-      <UpgradesTable decrease={decrease} />
+      <UpgradesTable decrease={decrease} cookiesPerSecond={cookiesPerSecond} setCookiesPerSecond={setCookiesPerSecond} />
     </div>
   );
 }
