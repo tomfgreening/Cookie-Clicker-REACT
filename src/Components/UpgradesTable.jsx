@@ -4,8 +4,12 @@ export default function UpgradesTable({
   decrease, cookiesPerSecond, setCookiesPerSecond, totalCookieCount}) {
     function handleUpgrades(item){
       if (totalCookieCount < item.cost){
-        console.log;"you do not have enough cookies to purchase this upgrade."
+        console.log;("you do not have enough cookies to purchase this upgrade.")
       } 
+      else {
+        decrease(item.cost);
+        // upgrade functionality to go here.'
+      }
   return (
     <div>                  
       {UpgradeItems.map((item) => (
