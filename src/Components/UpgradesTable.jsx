@@ -8,12 +8,14 @@ export default function UpgradesTable({
       } 
       else {
         decrease(item.cost);
-        // upgrade functionality to go here.'
+        // upgrade functionality logic to go here.'
       }
+    }
+
   return (
     <div>                  
       {UpgradeItems.map((item) => (
-        <button key={item.id} onClick={() => decrease(item.cost)}>
+        <button key={item.id} onClick={() => handleUpgrades(item)}>
           {item.name} - {item.cost} cookies.
           {item.description}
         </button>
