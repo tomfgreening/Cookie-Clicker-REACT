@@ -6,7 +6,7 @@ export default function UpgradesTable({ decrease, cookiesPerSecond, setCookiesPe
     {UpgradeItems.map((item) => (
       <button
       key={item.id}
-      onClick={() => decrease(item.cost)}>
+      onClick={if cookie () => decrease(item.cost)}>
         {item.name} - {item.cost} cookies.
         {item.description}
       </button>
