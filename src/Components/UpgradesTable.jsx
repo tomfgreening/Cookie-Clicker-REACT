@@ -8,14 +8,13 @@ export default function UpgradesTable({
 }) {
   function handleUpgrades(item) {
     if (totalCookieCount < item.cost) {
-      console.log;
-      ("you do not have enough cookies to purchase this upgrade.");
+      console.log("you do not have enough cookies to purchase this upgrade.");
     } else {
       decrease(item.cost);
-    }
-    if ((item.id = 2)) {
+     if ((item.id == 2)) {
       setCookiesPerSecond(cookiesPerSecond * 2);
-    }
+    }}
+   
   }
 
   return (
