@@ -25,6 +25,7 @@ export default function App() {
         cookiesPerSecond={cookiesPerSecond}
         setCookiesPerSecond={setCookiesPerSecond}
         totalCookieCount={totalCookieCount}
+        count={count}
       />
     </div>
   );
