@@ -12,7 +12,7 @@ export default function App() {
   useTimer({ setCookieCount, cookiesPerSecond });
   const totalCookieCount = cookieCount;
   function increase() {
-    setCookieCount(cookieCount + 1);
+    setCookieCount(cookieCount + cookiesPerClick);
   }
   function decrease(cookieCost) {
     setCookieCount(cookieCount - cookieCost);
