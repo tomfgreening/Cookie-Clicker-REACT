@@ -8,7 +8,11 @@ export default function UpgradesTable({increase, decrease, cookiesPerSecond,setC
       decrease(item.cost);
      if ((item.id == 2)) {
       setCookiesPerSecond(cookiesPerSecond * 2);
-    }}
+    }
+    if ((item.id == 1)) {
+      (increase * 2);
+    }
+    }
    
   }
 
