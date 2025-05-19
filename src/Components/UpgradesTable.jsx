@@ -1,6 +1,6 @@
 import { UpgradeItems } from "../lib/data";
 
-export default function UpgradesTable({decrease, cookiesPerSecond,setCookiesPerSecond, totalCookieCount}) {
+export default function UpgradesTable({increase, decrease, cookiesPerSecond,setCookiesPerSecond, totalCookieCount}) {
   function handleUpgrades(item) {
     if (totalCookieCount < item.cost) {
       console.log("you do not have enough cookies to purchase this upgrade.");
