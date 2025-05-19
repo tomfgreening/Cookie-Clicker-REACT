@@ -24,6 +24,7 @@ export default function App() {
         increase={increase}
         decrease={decrease}
         cookiesPerSecond={cookiesPerSecond}
+        setCookieCount={setCookieCount}
         setCookiesPerSecond={setCookiesPerSecond}
         totalCookieCount={totalCookieCount}
       />
