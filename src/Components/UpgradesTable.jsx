@@ -1,7 +1,10 @@
 import { UpgradeItems } from "../lib/data";
 
 export default function UpgradesTable({
+  increase,
   decrease,
+  cookiesPerClick,
+  setCookiesPerClick,
   cookiesPerSecond,
   setCookiesPerSecond,
   totalCookieCount,
