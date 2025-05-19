@@ -7,6 +7,7 @@ export default function UpgradesTable({
   setCookiesPerSecond,
   setCookieCount,
   totalCookieCount,
+  cookieCount,
 }) {
   function handleUpgrades(item) {
     if (totalCookieCount < item.cost) {
