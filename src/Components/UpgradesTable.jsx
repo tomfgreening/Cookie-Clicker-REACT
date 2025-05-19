@@ -1,13 +1,10 @@
 import { UpgradeItems } from "../lib/data";
 
 export default function UpgradesTable({
-  increase,
   decrease,
   cookiesPerSecond,
   setCookiesPerSecond,
-  setCookieCount,
   totalCookieCount,
-  cookieCount,
 }) {
   function handleUpgrades(item) {
     if (totalCookieCount < item.cost) {
@@ -18,7 +15,7 @@ export default function UpgradesTable({
         setCookiesPerSecond(cookiesPerSecond * 2);
       }
       if (item.id == 1) {
-        setCookieCount(increase * 2);
+        //  (cookiesPerClick placeholder);
       }
     }
   }
