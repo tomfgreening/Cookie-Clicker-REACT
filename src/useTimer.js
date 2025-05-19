@@ -2,7 +2,6 @@ import {useState, useEffect} from "react";
 
 export function useTimer({setCookieCount, cookiesPerSecond}) {
     const [count,setCount] = useState(0);
-
     useEffect(()=> {
         let interval = setInterval(() => {
             setCount((currentCount) => currentCount + 1);
