@@ -22,7 +22,6 @@ export default function App() {
       <TotalCookies totalCookieCount={totalCookieCount} />
       <CookieButton increase={increase} />
       <UpgradesTable
-        increase={increase}
         decrease={decrease}
         cookiesPerClick={cookiesPerClick}
         setCookiesPerClick={setCookiesPerClick}
