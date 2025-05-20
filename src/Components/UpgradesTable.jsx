@@ -19,6 +19,9 @@ export default function UpgradesTable({
       if (item.id == 1) {
         setCookiesPerClick(cookiesPerClick * 2);
       }
+      if (item.id == 3) {
+        setCookiesPerClick(cookiesPerClick + 10)
+      }
     }
   }
 
