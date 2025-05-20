@@ -13,11 +13,11 @@ export default function UpgradesTable({
       console.log("you do not have enough cookies to purchase this upgrade.");
     } else {
       decrease(item.cost);
-      if (item.id == 2) {
-        setCookiesPerSecond(cookiesPerSecond * 2);
-      }
-      if (item.id == 1) {
+        if (item.id == 1) {
         setCookiesPerClick(cookiesPerClick + 2);
+      }
+        if (item.id == 2) {
+        setCookiesPerSecond(cookiesPerSecond * 2);
       }
       if (item.id == 3) {
         setCookiesPerClick(cookiesPerClick + 10)
