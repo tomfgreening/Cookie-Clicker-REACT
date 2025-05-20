@@ -7,11 +7,12 @@ import UpgradesTable from "./Components/UpgradesTable";
 
 export default function App() {
   const [cookiesPerSecond, setCookiesPerSecond] = useState(1);
-  const [cookieCount, setCookieCount] = useState(0);
+  const [cookieCount, setCookieCount] = useState(1);
+  const [cookiesPerClick, setCookiesPerClick] = useState(1);
   useTimer({ setCookieCount, cookiesPerSecond });
   const totalCookieCount = cookieCount;
   function increase() {
-    setCookieCount(cookieCount + 1);
+    setCookieCount(cookieCount + cookiesPerClick);
   }
   function decrease(cookieCost) {
     setCookieCount(cookieCount - cookieCost);
@@ -22,6 +23,8 @@ export default function App() {
       <CookieButton increase={increase} />
       <UpgradesTable
         decrease={decrease}
+        cookiesPerClick={cookiesPerClick}
+        setCookiesPerClick={setCookiesPerClick}
         cookiesPerSecond={cookiesPerSecond}
         setCookiesPerSecond={setCookiesPerSecond}
         totalCookieCount={totalCookieCount}
