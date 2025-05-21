@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { UpgradeItems } from "../lib/data";
 
 export default function UpgradesTable({
@@ -8,25 +9,31 @@ export default function UpgradesTable({
   setCookiesPerSecond,
   totalCookieCount,
 }) {
+  const [notEnoughCookiesMessage, setNotEnoughCookiesMessage] = useState("");
   function handleUpgrades(item) {
     if (totalCookieCount < item.cost) {
-      console.log("you do not have enough cookies to purchase this upgrade.");
-    } else {
+               setNotEnoughCookiesMessage("you do not have enough cookies to purchase this upgrade.");
+setTimeout(() => {
+      setNotEnoughCookiesMessage("")
+    }, 4000);
+    } 
+    else {
       decrease(item.cost);
-        if (item.id == 1) {
+      if (item.id == 1) {
         setCookiesPerClick(cookiesPerClick + 2);
       }
-        if (item.id == 2) {
+      if (item.id == 2) {
         setCookiesPerSecond(cookiesPerSecond * 2);
       }
       if (item.id == 3) {
-        setCookiesPerClick(cookiesPerClick + 10)
+        setCookiesPerClick(cookiesPerClick + 10);
       }
     }
   }
 
   return (
     <div>
+      <p>{notEnoughCookiesMessage}</p>
       {UpgradeItems.map((item) => (
         <button key={item.id} onClick={() => handleUpgrades(item)}>
           {item.name} - {item.cost} cookies.
