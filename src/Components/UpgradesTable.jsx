@@ -9,10 +9,10 @@ export default function UpgradesTable({
   setCookiesPerSecond,
   totalCookieCount,
 }) {
-  const [notEnoughCookiesMessage, setnotEnoughCookiesMessage] = useState("");
+  const [notEnoughCookiesMessage, setNotEnoughCookiesMessage] = useState("");
   function handleUpgrades(item) {
     if (totalCookieCount < item.cost) {
-      setnotEnoughCookiesMessage(
+      setNotEnoughCookiesMessage(
         "you do not have enough cookies to purchase this upgrade."
       );
     } else {
