@@ -12,10 +12,12 @@ export default function UpgradesTable({
   const [notEnoughCookiesMessage, setNotEnoughCookiesMessage] = useState("");
   function handleUpgrades(item) {
     if (totalCookieCount < item.cost) {
-      setNotEnoughCookiesMessage(
-        "you do not have enough cookies to purchase this upgrade."
-      );
-    } else {
+               setNotEnoughCookiesMessage("you do not have enough cookies to purchase this upgrade.");
+setTimeout(() => {
+      setNotEnoughCookiesMessage("")
+    }, 4000);
+    } 
+    else {
       decrease(item.cost);
       if (item.id == 1) {
         setCookiesPerClick(cookiesPerClick + 2);
