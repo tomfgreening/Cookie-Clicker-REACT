@@ -1,3 +1,4 @@
+import "./stylesheet.css";
 import React from "react";
 import { useState } from "react";
 import CookieButton from "./Components/CookieButton";
