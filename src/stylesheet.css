@@ -10,18 +10,18 @@ body {
   background: linear-gradient(to top right, #00ff00 0%, #00ffff 100%);
 }
 
-.CookieButton{
-
+.CookieButton {
+  background-color: pink;
 }
 
-.TotalCookieCount{
-
+.TotalCookieCount {
+  background-color: red;
 }
 
-.UpgradesTable{
-
+.UpgradesTable {
+  background-color: darkviolet;
 }
 
-.NotEnoughCookiesMessage{
-
+.NotEnoughCookiesMessage {
+  background-color: blue;
 }
