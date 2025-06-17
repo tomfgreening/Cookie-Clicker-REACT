@@ -33,8 +33,8 @@ export default function UpgradesTable({
   }
 
   return (
-    <div>
-      <p>{notEnoughCookiesMessage}</p>
+    <div className="UpgradesTable">
+      <p className="NotEnoughCookiesMessage">{notEnoughCookiesMessage}</p>
       {UpgradeItems.map((item) => (
         <button key={item.id} onClick={() => handleUpgrades(item)}>
           {item.name} - {item.cost} cookies.

@@ -1,6 +1,6 @@
 export default function TotalCookies({ totalCookieCount }) {
   return (
-    <div>
+    <div className="TotalCookieCount">
       <p>Total cookies: {totalCookieCount}</p>
     </div>
   );
