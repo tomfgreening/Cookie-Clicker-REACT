@@ -19,7 +19,7 @@ export default function App() {
     setCookieCount(cookieCount - cookieCost);
   }
   return (
-    <div>
+    <div className="CSScookieContainer" id="CSScookieContainer">
       <TotalCookies totalCookieCount={totalCookieCount} />
       <CookieButton increase={increase} />
       <UpgradesTable
