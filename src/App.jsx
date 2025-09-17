@@ -22,14 +22,15 @@ export default function App() {
     <div className="CSScookieContainer" id="CSScookieContainer">
       <TotalCookies totalCookieCount={totalCookieCount} />
       <CookieButton increase={increase} />
-      <UpgradesTable
+      <div className="UpgradesTableContainer" id="UpgradesTableContainer">
+        <UpgradesTable
         decrease={decrease}
         cookiesPerClick={cookiesPerClick}
         setCookiesPerClick={setCookiesPerClick}
         cookiesPerSecond={cookiesPerSecond}
         setCookiesPerSecond={setCookiesPerSecond}
-        totalCookieCount={totalCookieCount}
-      />
+        totalCookieCount={totalCookieCount} />
+      </div>
     </div>
   );
 }

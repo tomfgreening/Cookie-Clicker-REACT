@@ -27,12 +27,11 @@ body {
 }
 
 .UpgradesTable {
-grid-row: 4;
-grid-column: 3;
+  grid-row: 4;
+  grid-column: 3;
 }
 
 .NotEnoughCookiesMessage {
   grid-row: 1;
   grid-column: 3;
-  
 }
