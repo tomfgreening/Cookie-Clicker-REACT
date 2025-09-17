@@ -12,23 +12,26 @@ body {
 
 .CSScookieContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .UpgradesTableContainer{
   grid-row: 4;
-  grid-column: 3;
+  grid-column: 4;
 }
 
 .CookieButton {
   grid-row: 2;
-  grid-column: 4;
+  grid-column: 5;
+  font-family: fantasy;
 }
 
 .TotalCookieCount {
   grid-row: 2;
-  grid-column: 3;
+  grid-column: 4;
+  font-family: fantasy;
+  font-size: x-large;
 }
 
 .NotEnoughCookiesMessage {
@@ -41,3 +44,5 @@ body {
   flex-direction: row;
   column-gap: 2rem;
 }
+
+/* Need to change fonts for buttons */
