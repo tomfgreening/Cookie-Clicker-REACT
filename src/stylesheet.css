@@ -39,4 +39,5 @@ body {
 .UpgradesTable {
   display: flex;
   flex-direction: row;
+  column-gap: 2rem;
 }
