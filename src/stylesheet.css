@@ -14,23 +14,25 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  font-family: monospace;
 }
 
-.UpgradesTableContainer{
+.UpgradesTableContainer {
   grid-row: 4;
   grid-column: 4;
+  font-family: monospace;
 }
 
-.CookieButton {
+.CookieButton2 {
   grid-row: 2;
   grid-column: 5;
-  font-family: fantasy;
+  font-family: monospace;
 }
 
 .TotalCookieCount {
   grid-row: 2;
   grid-column: 4;
-  font-family: fantasy;
+  font-family: monospace;
   font-size: x-large;
 }
 
@@ -45,4 +47,3 @@ body {
   column-gap: 2rem;
 }
 
-/* Need to change fonts for buttons */
