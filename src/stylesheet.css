@@ -39,16 +39,19 @@ body {
 .NotEnoughCookiesMessage {
   font-family: monospace;
   font-size: large;
+  text-align: center;
+  color: red;
 }
 
 .UpgradesTable {
   display: flex;
   flex-direction: row;
-  column-gap: 2rem;
+  column-gap: 4rem;
 }
 
 .UpgradesButtons {
-  font-family: monospace;
+  height: 250px;
+  width: 250px;
   font-size: x-large;
   font-weight: 900;
   color: white;
