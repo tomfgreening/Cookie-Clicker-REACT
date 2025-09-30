@@ -37,7 +37,8 @@ export default function UpgradesTable({
       <p className="NotEnoughCookiesMessage">{notEnoughCookiesMessage}</p>
       {UpgradeItems.map((item) => (
         <button className="UpgradesButtons" key={item.id} onClick={() => handleUpgrades(item)}>
-          {item.name} - {item.cost} cookies.
+          {item.name} 
+          -{item.cost} cookies.
           {item.description}
         </button>
       ))}

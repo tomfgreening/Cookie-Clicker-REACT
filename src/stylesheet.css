@@ -25,7 +25,7 @@ body {
   grid-row: 2;
   grid-column: 5;
   font-family: monospace;
-  border:dotted;
+  border: dotted;
   border-radius: 9%;
 }
 
@@ -33,13 +33,12 @@ body {
   grid-row: 2;
   grid-column: 4;
   font-family: monospace;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .NotEnoughCookiesMessage {
-  grid-row: 1;
-  grid-column: 3;
   font-family: monospace;
+  font-size: large;
 }
 
 .UpgradesTable {
@@ -50,7 +49,12 @@ body {
 
 .UpgradesButtons {
   font-family: monospace;
-  border: dotted;
-  border-radius: 9%;
+  font-size: x-large;
+  font-weight: 900;
+  color: white;
+  background-color: black;
+  border: solid;
+  border-radius: 11%;
+  border-color: #00ffff;
+  border-width: thick;
 }
-
