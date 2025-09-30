@@ -50,14 +50,15 @@ body {
 }
 
 .UpgradesButtons {
+  opacity: 88%;
   height: 250px;
   width: 250px;
   font-size: x-large;
   font-weight: 900;
-  color: white;
-  background-color: black;
+  color: #ffffff;
+  background-color: #6a0dad;
+  border-color: #c77dff;
   border: solid;
   border-radius: 11%;
-  border-color: #00ffff;
   border-width: thick;
 }
