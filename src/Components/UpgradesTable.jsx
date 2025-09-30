@@ -13,7 +13,7 @@ export default function UpgradesTable({
   function handleUpgrades(item) {
     if (totalCookieCount < item.cost) {
       setNotEnoughCookiesMessage(
-        "you do not have enough cookies to purchase this upgrade."
+        "You do not have enough cookies to purchase this upgrade."
       );
       setTimeout(() => {
         setNotEnoughCookiesMessage("");
@@ -33,15 +33,16 @@ export default function UpgradesTable({
   }
 
   return (
+    <div className="NotEnoughCookiesMessage">{notEnoughCookiesMessage}
     <div className="UpgradesTable">
-      <p className="NotEnoughCookiesMessage">{notEnoughCookiesMessage}</p>
       {UpgradeItems.map((item) => (
         <button className="UpgradesButtons" key={item.id} onClick={() => handleUpgrades(item)}>
-          {item.name} 
-          -{item.cost} cookies.
+          {item.name}  
+          - {item.cost} cookies.
           {item.description}
         </button>
       ))}
+    </div>
     </div>
   );
 }
