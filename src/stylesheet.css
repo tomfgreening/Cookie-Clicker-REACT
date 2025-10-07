@@ -39,14 +39,15 @@ body {
   grid-row: 1;
   grid-column: 2;
   font-family: monospace;
-  font-size: xx-large;
+  font-size: 500%;
 }
 
 .NotEnoughCookiesMessage {
   font-family: monospace;
-  font-size: x-large;
+  font-size: 200%;
   text-align: center;
   color: red;
+
 }
 
 .UpgradesTable {
