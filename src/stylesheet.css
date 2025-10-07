@@ -29,6 +29,10 @@ body {
   height: 20rem;
   width: 20rem;
 }
+.CookieButton:hover {
+  transition-duration: 0.2s;
+  scale: 120%;
+}
 
 .TotalCookieCount {
   grid-row: 1;
