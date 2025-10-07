@@ -13,7 +13,7 @@ export default function UpgradesTable({
   function handleUpgrades(item) {
     if (totalCookieCount < item.cost) {
       setNotEnoughCookiesMessage(
-        "You do not have enough cookies to purchase this upgrade."
+        "You do not have enough cookies to purchase this upgrade :("
       );
       setTimeout(() => {
         setNotEnoughCookiesMessage("");

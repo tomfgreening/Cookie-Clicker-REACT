@@ -40,6 +40,7 @@ body {
   grid-column: 2;
   font-family: monospace;
   font-size: 500%;
+  color: rebeccapurple;
 }
 
 .NotEnoughCookiesMessage {
@@ -47,7 +48,6 @@ body {
   font-size: 200%;
   text-align: center;
   color: red;
-
 }
 
 .UpgradesTable {
@@ -74,7 +74,3 @@ body {
   transition-duration: 0.2s;
   scale: 120%;
 }
-
-/* Need to create sound file to play when cookie is clicked
-  Need to add hover styling to interactive elements
-*/
