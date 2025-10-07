@@ -29,6 +29,7 @@ body {
   height: 20rem;
   width: 20rem;
 }
+
 .CookieButton:hover {
   transition-duration: 0.2s;
   scale: 120%;
@@ -66,6 +67,11 @@ body {
   border: solid;
   border-radius: 11%;
   border-width: thick;
+}
+
+.UpgradesButtons:hover{
+  transition-duration: 0.2s;
+  scale: 120%;
 }
 
 /* Need to create sound file to play when cookie is clicked
