@@ -1,7 +1,5 @@
 export default function CookieButton({ increase }) {
   return (
-    <div>
-      <button onClick={increase}>Click for another cookie!</button>
-    </div>
-  );
+      <img className="CookieButton" src="/clickmecookie.png" alt="Computer generated image of a cookie" onClick={increase}/>
+   );
 }

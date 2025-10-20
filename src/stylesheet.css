@@ -1,0 +1,76 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: linear-gradient(to top right, #00ff00 0%, #00ffff 100%);
+}
+
+.CSScookieContainer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.UpgradesTableContainer {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.CookieButton {
+  grid-row: 2;
+  grid-column: 2;
+  height: 20rem;
+  width: 20rem;
+}
+
+.CookieButton:hover {
+  transition-duration: 0.2s;
+  scale: 120%;
+}
+
+.TotalCookieCount {
+  grid-row: 1;
+  grid-column: 2;
+  font-family: monospace;
+  font-size: 500%;
+  color: rebeccapurple;
+}
+
+.NotEnoughCookiesMessage {
+  font-family: monospace;
+  font-size: 200%;
+  text-align: center;
+  color: red;
+}
+
+.UpgradesTable {
+  display: flex;
+  flex-direction: row;
+  column-gap: 4rem;
+}
+
+.UpgradesButtons {
+  opacity: 88%;
+  height: 250px;
+  width: 250px;
+  font-size: x-large;
+  font-weight: 900;
+  color: #ffffff;
+  background-color: #6a0dad;
+  border-color: #c77dff;
+  border: solid;
+  border-radius: 11%;
+  border-width: thick;
+}
+
+.UpgradesButtons:hover {
+  transition-duration: 0.2s;
+  scale: 120%;
+}

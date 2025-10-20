@@ -12,12 +12,13 @@ export default function UpgradesTable({
   const [notEnoughCookiesMessage, setNotEnoughCookiesMessage] = useState("");
   function handleUpgrades(item) {
     if (totalCookieCount < item.cost) {
-               setNotEnoughCookiesMessage("you do not have enough cookies to purchase this upgrade.");
-setTimeout(() => {
-      setNotEnoughCookiesMessage("")
-    }, 4000);
-    } 
-    else {
+      setNotEnoughCookiesMessage(
+        "You do not have enough cookies to purchase this upgrade :("
+      );
+      setTimeout(() => {
+        setNotEnoughCookiesMessage("");
+      }, 4000);
+    } else {
       decrease(item.cost);
       if (item.id == 1) {
         setCookiesPerClick(cookiesPerClick + 2);
@@ -32,14 +33,16 @@ setTimeout(() => {
   }
 
   return (
-    <div>
-      <p>{notEnoughCookiesMessage}</p>
+    <div className="NotEnoughCookiesMessage">{notEnoughCookiesMessage}
+    <div className="UpgradesTable">
       {UpgradeItems.map((item) => (
-        <button key={item.id} onClick={() => handleUpgrades(item)}>
-          {item.name} - {item.cost} cookies.
+        <button className="UpgradesButtons" key={item.id} onClick={() => handleUpgrades(item)}>
+          {item.name}  
+          - {item.cost} cookies.
           {item.description}
         </button>
       ))}
+    </div>
     </div>
   );
 }

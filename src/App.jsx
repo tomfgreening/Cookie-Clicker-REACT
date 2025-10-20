@@ -1,3 +1,4 @@
+import "./stylesheet.css";
 import React from "react";
 import { useState } from "react";
 import CookieButton from "./Components/CookieButton";
@@ -18,17 +19,18 @@ export default function App() {
     setCookieCount(cookieCount - cookieCost);
   }
   return (
-    <div>
+    <div className="CSScookieContainer" id="CSScookieContainer">
       <TotalCookies totalCookieCount={totalCookieCount} />
       <CookieButton increase={increase} />
-      <UpgradesTable
+      <div className="UpgradesTableContainer" id="UpgradesTableContainer">
+        <UpgradesTable
         decrease={decrease}
         cookiesPerClick={cookiesPerClick}
         setCookiesPerClick={setCookiesPerClick}
         cookiesPerSecond={cookiesPerSecond}
         setCookiesPerSecond={setCookiesPerSecond}
-        totalCookieCount={totalCookieCount}
-      />
+        totalCookieCount={totalCookieCount} />
+      </div>
     </div>
   );
 }
