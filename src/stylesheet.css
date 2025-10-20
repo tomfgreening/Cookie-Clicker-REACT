@@ -70,7 +70,7 @@ body {
   border-width: thick;
 }
 
-.UpgradesButtons:hover{
+.UpgradesButtons:hover {
   transition-duration: 0.2s;
   scale: 120%;
 }
