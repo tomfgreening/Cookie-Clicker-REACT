@@ -7,9 +7,18 @@
 html,
 body {
   height: 100%;
-  background: linear-gradient(to top right, #00ff00 0%, #00ffff 100%);
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255,255,255,0.2),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #ff7e5f 0%,
+      #feb47b 100%
+  );
 }
-
 
 .gamePanel {
   width: 90%;
@@ -55,9 +64,11 @@ body {
 .TotalCookieCount {
   grid-row: 1;
   grid-column: 2;
-  font-family: monospace;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
   font-size: 400%;
-  color: rebeccapurple;
+  color: #fff8dc;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .NotEnoughCookiesMessage {
@@ -78,8 +89,10 @@ body {
   min-height: 180px;
   padding: 1rem;
   border-radius: 20px;
-  background: rgba(106, 13, 173, 0.9);
+  background:#6b4226;
   color: white;
+  border: 2px solid #d2a679;
+  border-radius: 20px;
   transition: all 0.2s ease;
   cursor: pointer;
   line-height: 1.4;
@@ -102,4 +115,5 @@ body {
 .UpgradesButtons:hover {
   transition-duration: 0.2s;
   scale: 105%;
+  background: #7b4f30;
 }
