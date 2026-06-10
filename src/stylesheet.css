@@ -52,7 +52,7 @@ body {
   grid-row: 1;
   grid-column: 2;
   font-family: monospace;
-  font-size: 500%;
+  font-size: 400%;
   color: rebeccapurple;
 }
 
@@ -78,7 +78,6 @@ body {
   color: white;
   transition: all 0.2s ease;
   cursor: pointer;
-
 }
 
 .UpgradesButtons:hover {
