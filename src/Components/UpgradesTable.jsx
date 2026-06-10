@@ -37,9 +37,9 @@ export default function UpgradesTable({
     <div className="UpgradesTable">
       {UpgradeItems.map((item) => (
         <button className="UpgradesButtons" key={item.id} onClick={() => handleUpgrades(item)}>
-          {item.name}  
-          - {item.cost} cookies.
-          {item.description}
+          <h3>{item.name}</h3>
+          <p className="UpgradeCost">{item.cost} cookies </p>
+          <p className="UpgradeDescription">{item.description}</p>
         </button>
       ))}
     </div>

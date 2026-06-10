@@ -7,7 +7,29 @@
 html,
 body {
   height: 100%;
-  background: linear-gradient(to top right, #00ff00 0%, #00ffff 100%);
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255,255,255,0.2),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #ff7e5f 0%,
+      #feb47b 100%
+  );
+}
+
+.gamePanel {
+  width: 90%;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .CSScookieContainer {
@@ -28,6 +50,10 @@ body {
   grid-column: 2;
   height: 20rem;
   width: 20rem;
+  cursor: pointer;
+  filter: drop-shadow(
+    0 10px 15px rgba(0, 0, 0, 0.25)
+  );
 }
 
 .CookieButton:hover {
@@ -38,9 +64,11 @@ body {
 .TotalCookieCount {
   grid-row: 1;
   grid-column: 2;
-  font-family: monospace;
-  font-size: 500%;
-  color: rebeccapurple;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 400%;
+  color: #fff8dc;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .NotEnoughCookiesMessage {
@@ -57,20 +85,126 @@ body {
 }
 
 .UpgradesButtons {
-  opacity: 88%;
-  height: 250px;
-  width: 250px;
-  font-size: x-large;
-  font-weight: 900;
-  color: #ffffff;
-  background-color: #6a0dad;
-  border-color: #c77dff;
-  border: solid;
-  border-radius: 11%;
-  border-width: thick;
+  width: 180px;
+  min-height: 180px;
+  padding: 1rem;
+  border-radius: 20px;
+  background:#6b4226;
+  color: white;
+  border: 2px solid #d2a679;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  line-height: 1.4;
 }
 
+.UpgradesButtons h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.UpgradeCost {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.UpgradeDescription {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
 .UpgradesButtons:hover {
   transition-duration: 0.2s;
-  scale: 120%;
+  scale: 105%;
+  background: #7b4f30;
+}
+
+@media (max-width: 768px) {
+
+  .gamePanel {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .TotalCookieCount {
+    font-size: 300%;
+    text-align: center;
+  }
+
+  .CookieButton {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .UpgradesTable {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .UpgradesButtons {
+    width: 160px;
+    min-height: 160px;
+  }
+
+  .NotEnoughCookiesMessage {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+
+    .gamePanel {
+      width: 98%;
+      padding: 1rem;
+      margin: 1rem auto;
+    }
+  
+    .CSScookieContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .TotalCookieCount {
+      font-size: 220%;
+      text-align: center;
+    }
+  
+    .CookieButton {
+      width: 12rem;
+      height: 12rem;
+    }
+  
+    .UpgradesTable {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+    }
+  
+    .UpgradesButtons {
+      width: 100%;
+      max-width: 280px;
+      min-height: 120px;
+    }
+  
+    .UpgradesButtons h3 {
+      font-size: 1rem;
+    }
+  
+    .UpgradeDescription {
+      font-size: 0.85rem;
+    }
+  
+    .NotEnoughCookiesMessage {
+      font-size: 1rem;
+      padding: 0 1rem;
+    }
+
+    .TotalCookieCount,
+    .CookieButton,
+    .UpgradesTableContainer {
+      grid-row: auto;
+      grid-column: auto;
+    }
+  }
 }
