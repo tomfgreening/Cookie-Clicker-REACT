@@ -41,6 +41,10 @@ body {
   grid-column: 2;
   height: 20rem;
   width: 20rem;
+  cursor: pointer;
+  filter: drop-shadow(
+    0 10px 15px rgba(0, 0, 0, 0.25)
+  );
 }
 
 .CookieButton:hover {
