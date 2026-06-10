@@ -19,6 +19,7 @@ export default function App() {
     setCookieCount(cookieCount - cookieCost);
   }
   return (
+    <div className="gamePanel">
     <div className="CSScookieContainer" id="CSScookieContainer">
       <TotalCookies totalCookieCount={totalCookieCount} />
       <CookieButton increase={increase} />
@@ -31,6 +32,7 @@ export default function App() {
         setCookiesPerSecond={setCookiesPerSecond}
         totalCookieCount={totalCookieCount} />
       </div>
+    </div>
     </div>
   );
 }

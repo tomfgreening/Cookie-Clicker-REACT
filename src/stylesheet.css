@@ -10,6 +10,18 @@ body {
   background: linear-gradient(to top right, #00ff00 0%, #00ffff 100%);
 }
 
+.gamePanel {
+  width: 90%;
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
 .CSScookieContainer {
   display: grid;
   justify-items: center;
