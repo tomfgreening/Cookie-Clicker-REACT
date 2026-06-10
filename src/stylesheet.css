@@ -82,8 +82,23 @@ body {
   color: white;
   transition: all 0.2s ease;
   cursor: pointer;
+  line-height: 1.4;
 }
 
+.UpgradesButtons h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.UpgradeCost {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.UpgradeDescription {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
 .UpgradesButtons:hover {
   transition-duration: 0.2s;
   scale: 105%;
